@@ -23,7 +23,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <Link to="/" className="logo">NexFlix</Link>
+      <Link to="/" className="logo">MoRec</Link>
       
       <nav className="nav-links">
         <Link 

@@ -6,12 +6,12 @@ import { resolve } from 'path'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist',
+    outDir: '../dist',
     minify: 'terser',
     sourcemap: false,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html')
+        main: resolve(__dirname, '../index.html')
       },
       output: {
         manualChunks: {

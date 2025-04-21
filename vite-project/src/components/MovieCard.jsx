@@ -18,6 +18,9 @@ const MovieCard = ({ movie }) => {
     ? movie.vote_average.toFixed(1) 
     : 'N/A';
 
+  // Generate a small random tilt for the card
+  const randomTilt = Math.random() * 6 - 3; // -3 to +3 degrees
+
   // Handle click to scroll to top when navigating
   const handleClick = () => {
     window.scrollTo({
@@ -29,9 +32,14 @@ const MovieCard = ({ movie }) => {
   return (
     <motion.div 
       className="movie-card"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 20, rotateZ: randomTilt }}
+      animate={{ opacity: 1, y: 0, rotateZ: randomTilt }}
       transition={{ duration: 0.5 }}
+      whileHover={{ 
+        y: -10, 
+        rotateZ: 0,
+        transition: { duration: 0.3 }
+      }}
     >
       <Link to={`/movie/${movie.id}`} onClick={handleClick}>
         <div className="movie-poster-container">
