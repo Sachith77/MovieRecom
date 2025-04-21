@@ -1,11 +1,13 @@
 :root {
   --primary: #0cffe1;
   --secondary: #7928ca;
-  --background: #080d21;
-  --surface: #111a36;
-  --surface-light: #1a253f;
+  --background: #080808;
+  --surface: #101010;
+  --surface-light: #181818;
+  --surface-lighter: #222222;
   --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
+  --text-secondary: #c0c0c0;
+  --text-muted: #888888;
   --accent: #ff007a;
   --error: #ff3d3d;
   --header-height: 80px;
@@ -13,12 +15,14 @@
   --font-body: 'Inter', sans-serif;
   --font-special: 'Space Grotesk', monospace;
   --font-secondary: 'Montserrat', sans-serif;
-  --shadow-small: 0 4px 8px rgba(0, 0, 0, 0.3);
-  --shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.4);
-  --shadow-large: 0 16px 32px rgba(0, 0, 0, 0.5);
+  --shadow-small: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-large: 0 16px 32px rgba(0, 0, 0, 0.6);
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
+  --border-light: 1px solid rgba(255, 255, 255, 0.05);
+  --border-medium: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -56,6 +60,10 @@ body {
   line-height: 1.6;
   letter-spacing: 0.01em;
   font-size: 16px;
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(10, 10, 10, 0.8) 0%, transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(18, 18, 18, 0.7) 0%, transparent 30%);
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -149,4 +157,5 @@ button:hover,
   background-clip: text;
   color: transparent;
   display: inline-block;
+  text-shadow: none;
 }
