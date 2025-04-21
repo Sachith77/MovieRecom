@@ -14,6 +14,9 @@ export default defineConfig({
         main: resolve(__dirname, '../index.html')
       },
       output: {
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]',
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
           animations: ['framer-motion'],
@@ -28,6 +31,8 @@ export default defineConfig({
       '@': resolve(__dirname, 'src')
     }
   },
+  publicDir: resolve(__dirname, '../public'),
+  base: './',
   server: {
     port: 3000,
     open: true
