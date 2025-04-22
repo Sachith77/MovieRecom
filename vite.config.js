@@ -11,7 +11,7 @@ export default defineConfig({
     minify: 'terser',
     sourcemap: false,
     rollupOptions: {
-      input: path.resolve(__dirname, '../index.html'),
+      input: path.resolve(__dirname, './index.html'),
       output: {
         entryFileNames: 'assets/[name].[hash].js',
         chunkFileNames: 'assets/[name].[hash].js',
