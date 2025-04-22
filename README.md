@@ -26,3 +26,10 @@ This is a full-stack IMDb-like web application that allows users to browse, sear
    ```bash
    git clone https://github.com/Sachith77/MovieRecom.git
    cd MovieRecom
+## ScreenShots
+![image](https://github.com/user-attachments/assets/0b7630c8-f73b-44fe-a34c-2ea4032cce7e)
+Home Page
+
+![image](https://github.com/user-attachments/assets/2b4d3d2a-85df-4fe5-bcb4-be2bd7d46772)
+Inner Page
+
