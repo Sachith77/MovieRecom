@@ -26,6 +26,9 @@ This is a full-stack IMDb-like web application that allows users to browse, sear
    ```bash
    git clone https://github.com/Sachith77/MovieRecom.git
    cd MovieRecom
+   ## Deployed Link
+   Vercel Link - https://movie-recom-wheat.vercel.app/
+   
 ## ScreenShots
 ![image](https://github.com/user-attachments/assets/0b7630c8-f73b-44fe-a34c-2ea4032cce7e)
 Home Page
