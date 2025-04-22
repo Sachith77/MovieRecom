@@ -1,4 +1,4 @@
-# 🎬 MovieRecom - Movie Rating and Info App
+# 🎬 MoRec - Movie Rating and Info App
 
 ## 📄 Description
 
