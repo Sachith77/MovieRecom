@@ -17,6 +17,7 @@ This is a full-stack IMDb-like web application that allows users to browse, sear
 **Frontend:**
 - React.js
 
+
 **API:**
 - OMDb API for movie data
 
@@ -26,7 +27,8 @@ This is a full-stack IMDb-like web application that allows users to browse, sear
    ```bash
    git clone https://github.com/Sachith77/MovieRecom.git
    cd MovieRecom
-   ## Deployed Link
+   
+## Deployed Link
    Vercel Link - https://movie-recom-wheat.vercel.app/
    
 ## ScreenShots
