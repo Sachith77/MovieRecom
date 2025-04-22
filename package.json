@@ -1,9 +1,0 @@
-{
-  "name": "morec-root",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "start": "cd vite-project && npm run dev",
-    "build": "cd vite-project && npm run build:root"
-  }
-}
