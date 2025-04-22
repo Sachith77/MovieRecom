@@ -1,22 +1,21 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { resolve } from 'path'
+import path from 'path'
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
     outDir: '../dist',
+    emptyOutDir: true,
     minify: 'terser',
     sourcemap: false,
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, '../index.html')
-      },
+      input: path.resolve(__dirname, '../index.html'),
       output: {
-        entryFileNames: 'assets/[name].js',
-        chunkFileNames: 'assets/[name].js',
-        assetFileNames: 'assets/[name].[ext]',
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]',
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
           animations: ['framer-motion'],
@@ -28,10 +27,10 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src')
+      '@': path.resolve(__dirname, 'src')
     }
   },
-  publicDir: resolve(__dirname, '../public'),
+  publicDir: path.resolve(__dirname, '../public'),
   base: './',
   server: {
     port: 3000,
