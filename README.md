@@ -2,7 +2,7 @@
 
 ## 📄 Description
 
-This is a full-stack IMDb-like web application that allows users to browse, search, and rate movies. It fetches real-time movie data using a third-party API and provides a user-friendly interface for movie discovery and review.
+This is an IMDb-like web application that allows users to browse and search movies and it also suggests movies . It fetches real-time movie data using a third-party API and provides a user-friendly interface for movie discovery.
 
 ## ✨ Features
 
